@@ -474,16 +474,23 @@ Version      : 1.0
 
     });
 
-funtion sedMail(){
+function sendMail() {
     let parms = {
-    name : document.getElementById("name").value,
-        email : document.getElementById("email").value, 
-        subject : document.getElementById("subject").value, 
-        message : document.getElementById("message").value,
-    }
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value, 
+        subject: document.getElementById("subject").value, 
+        message: document.getElementById("message").value,
+    };
 
- emailjs.send("service_gt2k6zv","contactForm",parms).then(alert("Mensaje Enviado!!"))   
+    // Enviar correo utilizando EmailJS
+    emailjs.send("service_gt2k6zv", "contactForm", parms)
+        .then(function(response) {
+            alert("¡Mensaje Enviado!");
+        }, function(error) {
+            alert("Hubo un error al enviar el mensaje.");
+        });
 }
+
 
 
     
