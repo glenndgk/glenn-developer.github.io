@@ -474,8 +474,16 @@ Version      : 1.0
 
     });
 
+funtion sedMail(){
+    let parms = {
+    name : document.getElementById("name").value,
+        email : document.getElementById("email").value, 
+        subject : document.getElementById("subject").value, 
+        message : document.getElementById("message").value,
+    }
 
-
+ emailjs.send("service_gt2k6zv","contactForm",parms).then(alert("Mensaje Enviado!!"))   
+}
 
 
     
