@@ -475,20 +475,24 @@ Version      : 1.0
     });
 
 function sendMail() {
-    let parms = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value, 
-        subject: document.getElementById("subject").value, 
-        message: document.getElementById("message").value,
+    let params = {
+        user_name: document.getElementById("name").value,
+        user_email: document.getElementById("email").value,
+        message: document.getElementById("message").value
     };
 
-    // Enviar correo utilizando EmailJS
-    emailjs.send("service_gt2k6zv", "contactForm", parms)
-        .then(function(response) {
-            alert("¡Mensaje Enviado!");
-        }, function(error) {
-            alert("Hubo un error al enviar el mensaje.");
-        });
+    // Revisar los valores para asegurar que están correctos
+    console.log(params);  // Verifica que los datos se están recogiendo correctamente
+
+    // Enviar los datos usando EmailJS
+    emailjs.send("service_gt2k6zv", "contactForm", params).then(
+        function(response) {
+            alert("Mensaje enviado correctamente!");
+        },
+        function(error) {
+            alert("Error al enviar el mensaje: " + error);
+        }
+    );
 }
 
 
