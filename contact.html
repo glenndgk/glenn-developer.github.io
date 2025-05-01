@@ -51,6 +51,7 @@
             emailjs.init("6UyZJYRqpFibsgb-z");  // Aquí va tu public key
         })();
     </script>
+
 </head>
 
 <body>
@@ -163,11 +164,11 @@
             event.preventDefault(); // Prevenir el comportamiento por defecto del formulario
 
             // Enviar el formulario a través de EmailJS
-            emailjs.sendForm('service_id', 'contactForm', this)
+            emailjs.sendForm('service_gt2k6zv', 'contactForm', this)
                 .then(function(response) {
-                    alert("Correo enviado correctamente");
+                    alert("¡Correo enviado correctamente!");
                 }, function(error) {
-                    alert("Hubo un error al enviar el correo");
+                    alert("Hubo un error al enviar el mensaje.");
                 });
         });
     </script>
