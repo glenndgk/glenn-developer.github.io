@@ -474,26 +474,24 @@ Version      : 1.0
 
     });
 
-function sendMail() {
-    let params = {
-        user_name: document.getElementById("name").value,
-        user_email: document.getElementById("email").value,
-        message: document.getElementById("message").value
-    };
+// Recoger los valores de los campos del formulario
+let params = {
+    user_name: document.getElementById("name").value,  // Cambia 'name' a 'user_name'
+    user_email: document.getElementById("email").value,  // Cambia 'email' a 'user_email'
+    message: document.getElementById("message").value,  // Se mantiene igual
+    reply_to: document.getElementById("reply_to").value
+};
 
-    // Revisar los valores para asegurar que están correctos
-    console.log(params);  // Verifica que los datos se están recogiendo correctamente
+// Enviar los datos usando EmailJS
+emailjs.send('service_gt2k6zv', 'contactForm', params).then(
+    function(response) {
+        alert("Mensaje enviado correctamente!");
+    },
+    function(error) {
+        alert("Error al enviar el mensaje: " + error);
+    }
+);
 
-    // Enviar los datos usando EmailJS
-    emailjs.send("service_gt2k6zv", "contactForm", params).then(
-        function(response) {
-            alert("Mensaje enviado correctamente!");
-        },
-        function(error) {
-            alert("Error al enviar el mensaje: " + error);
-        }
-    );
-}
 
 
 
