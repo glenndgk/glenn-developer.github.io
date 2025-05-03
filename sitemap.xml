@@ -2,42 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://glenn.lat/</loc>
+    <lastmod>2025-05-03</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <lastmod>2025-04-28</lastmod>
   </url>
   <url>
     <loc>https://glenn.lat/about</loc>
+    <lastmod>2025-05-03</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-04-28</lastmod>
   </url>
   <url>
     <loc>https://glenn.lat/projects</loc>
-    <priority>0.9</priority>
-    <lastmod>2025-04-28</lastmod>
+    <lastmod>2025-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://glenn.lat/blog</loc>
+    <lastmod>2025-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://glenn.lat/blog/mejores-juegos-2025-tendencias-novedades</loc>
+    <lastmod>2025-05-03</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-04-28</lastmod>
+  </url>
+  <url>
+    <loc>https://glenn.lat/blog/espania-apuesta-por-la-tecnologia-cuantica</loc>
+    <lastmod>2025-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://glenn.lat/blog/la-carrera-espacial-entre-china-y-eeuu</loc>
+    <lastmod>2025-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://glenn.lat/blog/ghost-of-yotei-llega-el-2-de-octubre-a-ps5</loc>
+    <lastmod>2025-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://glenn.lat/contact</loc>
+    <lastmod>2025-05-03</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2025-04-28</lastmod>
-  </url>
-  <url>
-    <loc>https://glenn.lat/espania-apuesta-por-la-tecnologia-cuantica</loc>
-    <priority>0.7</priority>
-    <lastmod>2025-04-28</lastmod>
-  </url>
-  <url>
-    <loc>https://glenn.lat/la-carrera-espacial-entre-china-y-eeuu</loc>
-    <priority>0.7</priority>
-    <lastmod>2025-04-28</lastmod>
-  </url>
-  <url>
-    <loc>https://glenn.lat/ghost-of-yotei-llega-el-2-de-octubre-a-ps5</loc>
-    <priority>0.7</priority>
-    <lastmod>2025-04-28</lastmod>
   </url>
 </urlset>
