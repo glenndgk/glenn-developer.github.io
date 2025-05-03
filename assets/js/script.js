@@ -484,11 +484,18 @@ emailjs.send('service_gt2k6zv', 'contactForm', params).then(
     function(error) {
         alert("Error al enviar el mensaje: " + error);
     }
-);
+);  
 
+// Deshabilitar clic derecho
+document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+});
 
-
-
-    
+// Deshabilitar la apertura de herramientas de desarrollo con F12 y Ctrl+Shift+I
+document.addEventListener("keydown", function(e) {
+    if (e.keyCode === 123 || (e.ctrlKey && e.shiftKey && e.keyCode === 73)) {
+        e.preventDefault();
+    }
+});
 
 })(window.jQuery);
