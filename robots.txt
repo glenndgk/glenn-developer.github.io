@@ -1,0 +1,26 @@
+# robots.txt para Glenn.lat
+# Configurado para un rastreo eficiente y SEO optimizado
+
+# Permitir el rastreo completo del sitio
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+Disallow: /tmp/
+
+# Permitir acceso a todo el contenido del sitio web excepto áreas protegidas
+Allow: /
+
+# Especificación del sitemap
+Sitemap: https://glenn.lat/sitemap.xml
+
+# Bloquear la búsqueda de ciertos parámetros de URL que podrían crear contenido duplicado
+Disallow: /*?* 
+
+# Restringir el acceso a las URLs de búsqueda interna (si existe alguna)
+Disallow: /search
+
+# Páginas de blog deben ser rastreadas frecuentemente
+User-agent: Googlebot
+Disallow: /tag/
+Disallow: /category/
